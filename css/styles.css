@@ -1,0 +1,36 @@
+body {
+    padding: 1rem;
+    
+    nav {
+        width: 100%;
+        ul {
+            display: flex;
+            gap: 2rem;
+
+            li {
+                list-style: none;
+            }
+        }
+    }
+
+    article {
+
+        #card_date::before {
+            content: 'Release Date: ';
+            font-weight: bold;
+        }
+        #card_title::before {
+            content: 'Original Title: ';
+            font-weight: bold;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.selected {
+    color: red;
+    font-weight: bold;
+}

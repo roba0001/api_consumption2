@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/js/movies.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>The Movie DB</title>
+</head>
+<body>
+
+    <header>
+        <h1>The Movie Database</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><button id="now_playing">Now Playing</button></li>
+            <li><button id="popular">Popular</button></li>
+            <li><button id="top_rated">Top Rated</button></li>
+            <li><button id="upcoming">Upcoming</button></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <template id="movie_card">
+            <article>
+                <header>
+                    <h2 id="card_header"></h2>
+                </header>
+                <section>
+                    <img src="" alt="">
+                    <p id="card_info"></p>
+                    <p id="card_title"></p>
+                    <p id="card_date"></p>
+                </section>
+            </article>
+        </template>
+
+        <section id="error" class="hidden">
+            <header>
+                <h2>Error retreiving data</h2>
+            </header>
+        </section>
+
+        <section id="movie_list">
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ronja Baldursdóttir</p>
+    </footer>
+    
+</body>
+</html>
